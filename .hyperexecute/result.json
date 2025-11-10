@@ -1,0 +1,159 @@
+{
+    "id": "7dd6aed3-935c-43c1-85bb-5c1bba865238",
+    "remark": "Job failed as encountered a Test level failure",
+    "created_at": "2025-11-10T13:19:15Z",
+    "update_at": "2025-11-10T13:22:54Z",
+    "global_timeout": 20,
+    "tunnel_name": "",
+    "start_time": "2025-11-10T13:19:24Z",
+    "end_time": "2025-11-10T13:22:54Z",
+    "summary": {
+        "total_time": 210000000000,
+        "execution_time": 210000000000,
+        "total_tasks": 2,
+        "build_time_consumed": 352000000000,
+        "jobTestExecutionTime": "2m36s",
+        "failed_tasks": 2,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "scenario": {
+                "StageFailedPercent": 100,
+                "StagePassPercent": 0,
+                "TotalStage": 3
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            }
+        },
+        "status": "failed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=7dd6aed3-935c-43c1-85bb-5c1bba865238"
+    },
+    "tasks": [
+        {
+            "id": "HYPW-2878253-1762780763749166416BFB",
+            "os": "win",
+            "status": "failed",
+            "remark": "Job failed as encountered a Test level failure",
+            "debug": false,
+            "created_at": "2025-11-10T13:19:23Z",
+            "update_at": "2025-11-10T13:22:54Z",
+            "start_time": "2025-11-10T13:19:24Z",
+            "end_time": "2025-11-10T13:22:54Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "1ad90c8d-cf0c-4be5-90b6-0a41a876a803",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-11-10T13:19:25Z",
+                    "started_at": "2025-11-10T13:19:25Z",
+                    "updated_at": "2025-11-10T13:19:55Z",
+                    "order": 2,
+                    "task_number": 1
+                },
+                {
+                    "id": "4636ea2d-a61a-435f-af23-20124a412aca",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2025-11-10T13:19:55Z",
+                    "started_at": "2025-11-10T13:19:55Z",
+                    "updated_at": "2025-11-10T13:19:56Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "8d69b8bc-5692-474c-9ec0-9268f58b20e1",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "tests/simpleFormDemoTest.spec.ts",
+                    "iteration": 0,
+                    "link": "command.2.0.log",
+                    "created_at": "2025-11-10T13:19:56Z",
+                    "started_at": "2025-11-10T13:21:24Z",
+                    "updated_at": "2025-11-10T13:22:52Z",
+                    "order": 5,
+                    "task_number": 1
+                },
+                {
+                    "id": "fa3bfbb8-0e74-4370-ba5b-2c7b0ca75845",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "tests/dragAndDropSlidersTest.spec.ts",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-11-10T13:19:56Z",
+                    "started_at": "2025-11-10T13:19:57Z",
+                    "updated_at": "2025-11-10T13:21:24Z",
+                    "order": 4,
+                    "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "HYPW-2878253-1762780763763293967KPG",
+            "os": "win",
+            "status": "failed",
+            "remark": "Job failed as encountered a Test level failure",
+            "debug": false,
+            "created_at": "2025-11-10T13:19:23Z",
+            "update_at": "2025-11-10T13:21:46Z",
+            "start_time": "2025-11-10T13:19:24Z",
+            "end_time": "2025-11-10T13:21:46Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "8d739556-4259-4c4a-b41e-2ed7c97011f1",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-11-10T13:19:25Z",
+                    "started_at": "2025-11-10T13:19:25Z",
+                    "updated_at": "2025-11-10T13:19:55Z",
+                    "order": 2,
+                    "task_number": 2
+                },
+                {
+                    "id": "d6c42192-f460-47af-ad6b-4e6c9160f038",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "tests/inputFormSubmitTest.spec.ts",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-11-10T13:19:56Z",
+                    "started_at": "2025-11-10T13:19:57Z",
+                    "updated_at": "2025-11-10T13:21:43Z",
+                    "order": 4,
+                    "task_number": 2
+                },
+                {
+                    "id": "ea146d54-afc0-46b1-a11c-876b59ccd3f1",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2025-11-10T13:19:55Z",
+                    "started_at": "2025-11-10T13:19:55Z",
+                    "updated_at": "2025-11-10T13:19:56Z",
+                    "order": 3,
+                    "task_number": 2
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}
