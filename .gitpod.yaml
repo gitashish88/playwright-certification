@@ -1,0 +1,39 @@
+# gitpod.yaml
+
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Setup & Install
+    init: |
+      npm install
+      npx playwright install
+    command: echo "Ready to run Playwright tests with HyperExecute!"
+
+  - name: Run Playwright Tests (Local)
+    command: npx playwright test
+
+  - name: Run on HyperExecute
+    command: |
+      if [ -f .env ]; then
+        hyperexecute --config hyperexecute.yaml --env .env
+      else
+        echo ".env file not found. Please create one with LT_USERNAME and LT_ACCESS_KEY."
+      fi
+
+ports:
+  - port: 9323
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - ms-playwright.playwright
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
+
+# Optional: Prebuilds to speed up workspace start
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
